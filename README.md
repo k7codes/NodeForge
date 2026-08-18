@@ -1,32 +1,26 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/k7codes/NodeForge/main/assets/nodeforge-banner.png" width="900">
-
-<br>
-
-# NodeForge
+# NODEFORGE
 
 ### Visual Programming Studio
 
-A modern node-based environment for designing, connecting and managing application logic visually.
+**Build logic. Connect nodes. Create without limits.**
 
 <br>
 
-<a href="https://github.com/k7codes/NodeForge/stargazers">
-<img src="https://img.shields.io/github/stars/k7codes/NodeForge?style=for-the-badge&logo=github&label=STARS" alt="Stars">
-</a>
-&nbsp;
-<a href="https://github.com/k7codes/NodeForge/network/members">
-<img src="https://img.shields.io/github/forks/k7codes/NodeForge?style=for-the-badge&logo=github&label=FORKS" alt="Forks">
-</a>
-&nbsp;
 <a href="https://github.com/k7codes/NodeForge">
-<img src="https://img.shields.io/github/last-commit/k7codes/NodeForge?style=for-the-badge&label=LAST%20COMMIT" alt="Last Commit">
+<img src="https://img.shields.io/badge/Repository-18181B?style=for-the-badge&logo=github&logoColor=white" alt="Repository">
+</a>
+<a href="https://github.com/k7codes/NodeForge/stargazers">
+<img src="https://img.shields.io/github/stars/k7codes/NodeForge?style=for-the-badge&logo=github&logoColor=white" alt="Stars">
+</a>
+<a href="https://github.com/k7codes/NodeForge/network/members">
+<img src="https://img.shields.io/github/forks/k7codes/NodeForge?style=for-the-badge&logo=github&logoColor=white" alt="Forks">
 </a>
 
 <br><br>
 
-<img src="https://skillicons.dev/icons?i=react,typescript,vite,tailwind,express&theme=dark" alt="Tech Stack">
+<img src="https://skillicons.dev/icons?i=react,typescript,vite,tailwind,express&perline=5" alt="Technology Stack">
 
 </div>
 
@@ -34,80 +28,98 @@ A modern node-based environment for designing, connecting and managing applicati
 
 <div align="center">
 
-## Overview
+## About
 
 </div>
 
-NodeForge is a modern **visual programming studio** designed around a node-based workflow.
+**NodeForge** is a modern node-based visual programming environment designed to make application logic easier to design, understand and manage.
 
-The goal is to make application logic easier to design, understand and maintain by representing operations and relationships through an interactive visual graph.
+Instead of manually writing and connecting every part of an application's logic, NodeForge provides a visual workspace where operations can be represented as nodes and connected through a structured workflow.
 
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/k7codes/NodeForge/main/assets/preview.png" width="900" alt="NodeForge Preview">
-
-</div>
+The project focuses on a modular architecture that allows the visual editor, validation system, services, state management and generation logic to evolve independently.
 
 ---
 
 <div align="center">
 
-## Core Features
+## Features
 
 </div>
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="50%">
 
-### <img src="https://img.icons8.com/fluency/28/workflow.png" width="22"> Node-Based Workflow
+### Visual Node Graph
 
-Create application logic using connected visual nodes instead of manually managing every relationship.
-
-</td>
-<td width="50%" valign="top">
-
-### <img src="https://img.icons8.com/fluency/28/design.png" width="22"> Visual Workspace
-
-An interactive workspace designed for building and navigating complex visual graphs.
+Create and organize application logic through interconnected nodes and visual workflows.
 
 </td>
-</tr>
+<td width="50%">
 
-<tr>
-<td width="50%" valign="top">
+### Modular Architecture
 
-### <img src="https://img.icons8.com/fluency/28/module.png" width="22"> Modular Architecture
-
-Components, services, state, validation and generation logic are separated into dedicated modules.
-
-</td>
-<td width="50%" valign="top">
-
-### <img src="https://img.icons8.com/fluency/28/code.png" width="22"> TypeScript
-
-Strong typing across the application provides a more maintainable and predictable codebase.
+Separate components, services, state, validation, types and generation logic into dedicated modules.
 
 </td>
 </tr>
 
 <tr>
-<td width="50%" valign="top">
+<td width="50%">
 
-### <img src="https://img.icons8.com/fluency/28/server.png" width="22"> Server Integration
+### Interactive Workspace
 
-Express provides the server-side layer required by the application.
+A modern interface designed around visual interaction and graph-based development.
 
 </td>
-<td width="50%" valign="top">
+<td width="50%">
 
-### <img src="https://img.icons8.com/fluency/28/maintenance.png" width="22"> Extensible
+### Type-Safe Development
 
-The architecture is designed to support additional node types, services and generation features.
+Built with TypeScript to provide predictable and maintainable application logic.
+
+</td>
+</tr>
+
+<tr>
+<td width="50%">
+
+### Server Integration
+
+Express-based server infrastructure for application and backend functionality.
+
+</td>
+<td width="50%">
+
+### Extensible Design
+
+The architecture is designed to support additional nodes, services and generation capabilities.
 
 </td>
 </tr>
 </table>
+
+---
+
+<div align="center">
+
+## Technology
+
+<br>
+
+<img src="https://skillicons.dev/icons?i=react,typescript,vite,tailwind,express&perline=5" alt="Technologies">
+
+<br><br>
+
+|  Technology  | Purpose             |
+| :----------: | :------------------ |
+|     React    | User Interface      |
+|  TypeScript  | Application Logic   |
+|     Vite     | Development & Build |
+| Tailwind CSS | Styling             |
+|    Express   | Server Layer        |
+
+</div>
 
 ---
 
@@ -115,53 +127,42 @@ The architecture is designed to support additional node types, services and gene
 
 ## Architecture
 
-<img src="https://raw.githubusercontent.com/k7codes/NodeForge/main/assets/architecture.png" width="850" alt="NodeForge Architecture">
-
 </div>
 
 ```text
-                         NodeForge
+                         ┌─────────────────────┐
+                         │      NodeForge      │
+                         │   Visual Studio     │
+                         └──────────┬──────────┘
+                                    │
+                         ┌──────────▼──────────┐
+                         │    Visual Editor    │
+                         └──────────┬──────────┘
+                                    │
+                    ┌───────────────┼───────────────┐
+                    │               │               │
+             ┌──────▼──────┐ ┌─────▼─────┐ ┌──────▼──────┐
+             │    Nodes     │ │   State   │ │ Components  │
+             └──────┬──────┘ └─────┬─────┘ └─────────────┘
+                    │              │
+                    └───────┬──────┘
                             │
-              ┌─────────────┴─────────────┐
-              │                           │
-         Visual Layer                Application
-              │                           │
-       ┌──────┴──────┐             ┌──────┴──────┐
-       │             │             │             │
-    Components     Nodes        Services       State
-       │             │             │             │
-       └─────────────┴─────────────┴─────────────┘
+                    ┌───────▼────────┐
+                    │   Validation   │
+                    └───────┬────────┘
                             │
-                       Validation
+                    ┌───────▼────────┐
+                    │    Services    │
+                    └───────┬────────┘
                             │
-                       Generation
+                    ┌───────▼────────┐
+                    │    Generator   │
+                    └───────┬────────┘
                             │
-                         Server
+                    ┌───────▼────────┐
+                    │     Server     │
+                    └────────────────┘
 ```
-
----
-
-<div align="center">
-
-## Technology Stack
-
-<br>
-
-<img src="https://skillicons.dev/icons?i=react,typescript,vite,tailwind,express&theme=dark" alt="Technology Stack">
-
-<br><br>
-
-<table>
-<tr>
-<td align="center"><b>React</b><br>Frontend</td>
-<td align="center"><b>TypeScript</b><br>Application Logic</td>
-<td align="center"><b>Vite</b><br>Build Tool</td>
-<td align="center"><b>Tailwind CSS</b><br>Styling</td>
-<td align="center"><b>Express</b><br>Server</td>
-</tr>
-</table>
-
-</div>
 
 ---
 
@@ -175,19 +176,32 @@ The architecture is designed to support additional node types, services and gene
 NodeForge/
 │
 ├── src/
-│   ├── bilesenler/       # UI components
-│   ├── dogrulama/        # Validation
-│   ├── durum/            # Application state
-│   ├── servisler/        # Services
-│   ├── tanimlar/         # Definitions
-│   ├── tipler/           # TypeScript types
-│   └── uretici/          # Generation logic
+│   ├── bilesenler/
+│   │   └── UI components
+│   │
+│   ├── dogrulama/
+│   │   └── Validation
+│   │
+│   ├── durum/
+│   │   └── Application state
+│   │
+│   ├── servisler/
+│   │   └── Services
+│   │
+│   ├── tanimlar/
+│   │   └── Definitions
+│   │
+│   ├── tipler/
+│   │   └── TypeScript types
+│   │
+│   └── uretici/
+│       └── Generation logic
 │
-├── server.ts             # Express server
-├── index.html            # Application entry
-├── vite.config.ts        # Vite configuration
-├── tsconfig.json         # TypeScript configuration
-└── package.json          # Project configuration
+├── server.ts
+├── index.html
+├── vite.config.ts
+├── tsconfig.json
+└── package.json
 ```
 
 ---
@@ -203,32 +217,32 @@ NodeForge/
 * Node.js
 * npm
 
-### Clone the Repository
+### Clone
 
 ```bash
 git clone https://github.com/k7codes/NodeForge.git
 cd NodeForge
 ```
 
-### Install Dependencies
+### Install
 
 ```bash
 npm install
 ```
 
-### Start Development
+### Development
 
 ```bash
 npm run dev
 ```
 
-### Build
+### Production Build
 
 ```bash
 npm run build
 ```
 
-### Start Production
+### Start
 
 ```bash
 npm start
@@ -238,13 +252,28 @@ npm start
 
 <div align="center">
 
-## Development
-
-NodeForge is structured to make experimentation and feature development straightforward.
-
-New functionality can be introduced through the existing component, service, type, validation and generator layers without requiring the entire application architecture to be rewritten.
+## Development Workflow
 
 </div>
+
+```text
+Create Node
+     │
+     ▼
+Configure Node
+     │
+     ▼
+Connect Nodes
+     │
+     ▼
+Validate Graph
+     │
+     ▼
+Process Logic
+     │
+     ▼
+Generate Output
+```
 
 ---
 
@@ -254,16 +283,18 @@ New functionality can be introduced through the existing component, service, typ
 
 </div>
 
-* [ ] Expanded node library
-* [ ] Custom node creation
-* [ ] Project save and load
-* [ ] Import and export
-* [ ] Advanced graph validation
-* [ ] Execution debugger
-* [ ] Improved code generation
-* [ ] Node templates
-* [ ] Plugin architecture
-* [ ] Project management system
+|  Status | Feature                   |
+| :-----: | ------------------------- |
+| Planned | Expanded node library     |
+| Planned | Custom node creation      |
+| Planned | Project save / load       |
+| Planned | Import / export           |
+| Planned | Advanced graph validation |
+| Planned | Execution debugger        |
+| Planned | Improved code generation  |
+| Planned | Node templates            |
+| Planned | Plugin architecture       |
+| Planned | Project management        |
 
 ---
 
@@ -271,9 +302,9 @@ New functionality can be introduced through the existing component, service, typ
 
 ## Contributing
 
-Contributions, ideas and improvements are welcome.
-
 </div>
+
+Contributions and improvements are welcome.
 
 ```bash
 git checkout -b feature/my-feature
@@ -296,20 +327,18 @@ Then open a Pull Request.
 <br>
 
 <a href="https://github.com/k7codes">
-<img src="https://github.com/k7codes.png" width="110" alt="K7~">
+<img src="https://github.com/k7codes.png" width="100" alt="K7">
 </a>
+
+<br>
 
 ### K7~
 
 <a href="https://github.com/k7codes">
-<img src="https://img.shields.io/badge/GitHub-k7codes-181717?style=for-the-badge&logo=github" alt="GitHub">
+<img src="https://img.shields.io/badge/GitHub-k7codes-18181B?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
 </a>
 
 <br><br>
-
-<img src="https://skillicons.dev/icons?i=github&theme=dark" width="35">
-
-<br>
 
 **NodeForge**
 
